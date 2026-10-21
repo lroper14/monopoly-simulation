@@ -1,0 +1,160 @@
+---
+title: "Monopoly extended"
+output: html_document
+date: "2026-10-21"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+monopoly_spaces <- c(
+  "GO",
+  "Old Kent Road",
+  "Community Chest",
+  "Whitechapel Road",
+  "Income Tax",
+  "King's Cross Station",
+  "The Angel Islington",
+  "Chance",
+  "Euston Road",
+  "Pentonville Road",
+  "Jail / Just Visiting",
+  "Pall Mall",
+  "Electric Company",
+  "Whitehall",
+  "Northumberland Avenue",
+  "Marylebone Station",
+  "Bow Street",
+  "Community Chest",
+  "Marlborough Street",
+  "Vine Street",
+  "Free Parking",
+  "Strand",
+  "Chance",
+  "Fleet Street",
+  "Trafalgar Square",
+  "Fenchurch St Station",
+  "Leicester Square",
+  "Coventry Street",
+  "Water Works",
+  "Piccadilly",
+  "Go To Jail",
+  "Regent Street",
+  "Oxford Street",
+  "Community Chest",
+  "Bond Street",
+  "Liverpool Street Station",
+  "Chance",
+  "Park Lane",
+  "Super Tax",
+  "Mayfair"
+)
+
+monopoly_spaces[1]
+```
+
+
+```{r}
+
+monopoly <- function(num_turns, num_players){
+  
+  # Monopoly starts from GO
+  current_board_position <- 1
+  
+  # Vector of all the monopoly spaces
+  monopoly_spaces <- c(
+  "GO",
+  "Old Kent Road",
+  "Community Chest",
+  "Whitechapel Road",
+  "Income Tax",
+  "King's Cross Station",
+  "The Angel Islington",
+  "Chance",
+  "Euston Road",
+  "Pentonville Road",
+  "Jail / Just Visiting",
+  "Pall Mall",
+  "Electric Company",
+  "Whitehall",
+  "Northumberland Avenue",
+  "Marylebone Station",
+  "Bow Street",
+  "Community Chest",
+  "Marlborough Street",
+  "Vine Street",
+  "Free Parking",
+  "Strand",
+  "Chance",
+  "Fleet Street",
+  "Trafalgar Square",
+  "Fenchurch St Station",
+  "Leicester Square",
+  "Coventry Street",
+  "Water Works",
+  "Piccadilly",
+  "Go To Jail",
+  "Regent Street",
+  "Oxford Street",
+  "Community Chest",
+  "Bond Street",
+  "Liverpool Street Station",
+  "Chance",
+  "Park Lane",
+  "Super Tax",
+  "Mayfair"
+)
+  
+  property_values <- c(
+  0,     # GO
+  60,    # Old Kent Road
+  0,     # Community Chest
+  60,    # Whitechapel Road
+  0,     # Income Tax
+  200,   # King's Cross Station
+  100,   # The Angel Islington
+  0,     # Chance
+  100,   # Euston Road
+  120,   # Pentonville Road
+  0,     # Jail / Just Visiting
+  140,   # Pall Mall
+  150,   # Electric Company
+  140,   # Whitehall
+  160,   # Northumberland Avenue
+  200,   # Marylebone Station
+  180,   # Bow Street
+  0,     # Community Chest
+  180,   # Marlborough Street
+  200,   # Vine Street
+  0,     # Free Parking
+  220,   # Strand
+  0,     # Chance
+  220,   # Fleet Street
+  240,   # Trafalgar Square
+  200,   # Fenchurch St Station
+  260,   # Leicester Square
+  260,   # Coventry Street
+  150,   # Water Works
+  280,   # Piccadilly
+  0,     # Go To Jail
+  300,   # Regent Street
+  300,   # Oxford Street
+  0,     # Community Chest
+  320,   # Bond Street
+  200,   # Liverpool Street Station
+  0,     # Chance
+  350,   # Park Lane
+  0,     # Super Tax
+  400    # Mayfair
+)
+  
+  
+  
+}
+
+
+```
+
